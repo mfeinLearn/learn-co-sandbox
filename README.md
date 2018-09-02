@@ -50,7 +50,7 @@ day_of_the_week (string)
   - Returns the total years that this tutor has taught
 - ++++++ Tutor.all
   - Returns an array of all tutor objects
-- Tutor.avg_exp 
+- +++++++ Tutor.avg_exp 
   - Finds the average years of experience of all tutors
   - Expected Result: An integer for the average of total_years(years of experience)
 # oo-relationships-practice-
