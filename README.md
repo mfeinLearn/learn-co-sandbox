@@ -1,11 +1,56 @@
-Hi! 👋
+# relationship-practice
 
-You've opened the IDE Sandbox. 🎉
+Howdy y'all!
 
-The Sandbox is an environment that you can access on "readme" and "code-along" lessons in Learn. It's a great place to experiment with code when you're not working on a "lab" (labs open the IDE In Browser).
+The following relationship is between a Student and a Tutor through a TutorSession
 
-The work you do in the Sandbox will be saved from lesson to lesson, and is automatically saved on your behalf to a repository in your GitHub account called `learn-co-sandbox`.
+Student ----< TutorSession >------- Tutor
 
-Please DO NOT touch this repository in GitHub, as it will affect your Sandbox experience, and potentially cause your work to be out of sync.
+# Domain Model
+- One-to-many Student and TutorSession
+  - TutorSession belongs to a Student and a Student has many TutorSessions
+- One-to-Many Tutor and TutorSession
+  - Tutor has many TutorSessions and a TutorSession belongs to a Tutor
+- Student has many Tutors through a TutorSession
+- Tutor has many Students through a TutorSession
 
-To learn more about the Sandbox, please visit http://help.learn.co/ide-in-browser#sandbox.
+# Student
+**** Marks that it has been completed
+- ****A student is initialized with a grade (Fixnum), name (String)
+- ****Student.all
+  - Expected Result: An array of student objects
+- ****Student#create_session(tutor,time,weekday)
+  - Expectation is to create a TutorSession
+  - We know we need to pass in all the requirements to make a TutorSession
+- ****Student#tutor_sessions
+  - To see every tutor session that this student has done
+  - Expectation Result: An array of TutorSessions
+- ****Student#tutors
+  - This student wants to see all of their tutors
+  - Expected Result (the data type):  An Array of Tutors
+- Student.highest_grade
+  - Find the name of the student that has the highest grade.
+  - Expected Result: ???? (**replace ???? with the data type that this method should return***)
+
+# TutorSession
+**** Marks that it has been completed
+- ****A TutorSession is initialized a with a Student (Student object), a Tutor (Tutor object), time (Fixnum),
+day_of_the_week (string)
+- Student?over_60_minutes (**replace ? with the correct symbol if this is a class method or an instance method**)
+  - Find all students that were tutored for more then 60 minutes and find their grades. Put the result in an array.
+  - Expected Result: ???? (**replace ???? with the data type that this method should return***)
+
+# Tutor
+**** Marks that it has been completed
+- ****A tutor is initialized with a number of years tutored (Fixnum), name (String)
+- ****Tutor#total_years
+  - Returns the total years that this tutor has taught
+- Tutor.all
+  - Returns an array of all tutor objects
+- Tutor?avg_exp (**replace ? with the correct symbol if this is a class method or an instance method**)
+  - Finds the average years of experience of all tutors
+  - Expected Result: ???? (**replace ???? with the data type that this method should return***)
+# oo-relationships-practice-
+# oo-relationships-practice-
+# practice-relationships-oo
+# practice-relationships-oo
