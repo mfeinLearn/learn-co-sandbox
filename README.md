@@ -48,7 +48,7 @@ day_of_the_week (string)
 - ****A tutor is initialized with a number of years tutored (Fixnum), name (String)
 - ****Tutor#total_years
   - Returns the total years that this tutor has taught
-- Tutor.all
+- ++++++ Tutor.all
   - Returns an array of all tutor objects
 - Tutor.avg_exp 
   - Finds the average years of experience of all tutors
