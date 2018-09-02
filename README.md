@@ -35,14 +35,16 @@ Student ----< TutorSession >------- Tutor
 
 # TutorSession
 **** Marks that it has been completed
++++++ Malcome has completed
 - ****A TutorSession is initialized a with a Student (Student object), a Tutor (Tutor object), time (Fixnum),
 day_of_the_week (string)
-- Student.over_60_minutes
+- +++++++ Student.over_60_minutes
   - Find all students that were tutored for more then 60 minutes and find their grades. Put the result in an array.
-  - Expected Result: ???? (**replace ???? with the data type that this method should return***)
+  - Expected Result: Show an array of TutorSessions objects of tutorsessiosns at or over 60 minutes
 
 # Tutor
 **** Marks that it has been completed
++++++ Malcome has completed
 - ****A tutor is initialized with a number of years tutored (Fixnum), name (String)
 - ****Tutor#total_years
   - Returns the total years that this tutor has taught
